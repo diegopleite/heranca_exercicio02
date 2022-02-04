@@ -12,7 +12,7 @@ namespace Heranca_exercicio02.Entities {
             Price = price;
         }
 
-        public string PriceTag() {
+        public virtual string PriceTag() {
             StringBuilder sb = new StringBuilder();
             sb.AppendLine(Name);
             sb.AppendLine("R$ " + Price);
