@@ -17,7 +17,7 @@ namespace Heranca_exercicio02.Entities {
 
         public override string PriceTag() {
             StringBuilder sb = new StringBuilder();
-            sb.Append("R$" + TotalPrice() + " (Custom fee: R$" + CustomFee + ")");
+            sb.Append(Name + "R$" + TotalPrice() + " (Custom fee: R$" + CustomFee + ")");
             return sb.ToString();
         }
     }

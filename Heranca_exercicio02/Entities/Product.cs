@@ -14,8 +14,8 @@ namespace Heranca_exercicio02.Entities {
 
         public virtual string PriceTag() {
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine(Name);
-            sb.AppendLine("R$ " + Price);
+            sb.Append(Name);
+            sb.AppendLine(" R$ " + Price);
             return sb.ToString();
         }
     }

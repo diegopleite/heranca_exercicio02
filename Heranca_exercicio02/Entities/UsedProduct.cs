@@ -13,7 +13,7 @@ namespace Heranca_exercicio02.Entities {
 
         public override string PriceTag() {
             StringBuilder sb = new StringBuilder();
-            sb.Append(Name + " (Used) - R$" + Price + " (Manufacture Date: " + ManufactureDate);            
+            sb.Append(Name + " (Used) - R$" + Price + " (Manufacture Date: " + ManufactureDate.ToString("dd/mm/yyyy") + ")");            
             
             return sb.ToString();
         }
